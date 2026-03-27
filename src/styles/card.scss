@@ -5,7 +5,7 @@
   width: 200px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $background-color;
   border-radius: 5px;
 
   &__wrapper {
