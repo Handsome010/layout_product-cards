@@ -12,10 +12,13 @@
     background-image: url('../images/star.svg');
     background-position: center;
   }
-  &--4 &__star:not(:last-child) {
-    margin-right: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../images/star-active.svg');
+
+  @for $N from 0 through 5 {
+    &--#{$N} &__star:nth-child(-n + #{$N}) {
+      margin-right: 4px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../images/star-active.svg');
+    }
   }
 }
